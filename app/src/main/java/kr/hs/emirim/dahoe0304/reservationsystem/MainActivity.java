@@ -34,5 +34,24 @@ public class MainActivity extends AppCompatActivity {
         timePicker.setVisibility(View.INVISIBLE);
         calView.setVisibility(View.INVISIBLE);  //화면에 두가지 뷰가 안보임. 가려진다.
 
+
+        radioDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calView.setVisibility(View.VISIBLE);    //보이게
+                timePicker.setVisibility(View.INVISIBLE);   //안보이게
+
+
+            }
+        });
+        radioTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calView.setVisibility(View.INVISIBLE);    //안보이게
+                timePicker.setVisibility(View.VISIBLE);   //보이게
+
+
+            }
+        });
     }
 }
