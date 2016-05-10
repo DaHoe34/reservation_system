@@ -22,7 +22,7 @@
     android:id="@+id/but_start"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/but_start"
+    android:text="예약 시작"
     />
 <RadioGroup
     android:id="@+id/radio_group"
